@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <title>Gio's Famous Quarentine Coco Chip Cookies</title>
+  </head>
+  
+  
+  <body>
+  <!-- So does this need to be in container instead of content? Should i just get rid of content class? -->
+  <div class="content">
+          <header>
+              <h1>Jacob Jacknin jqery project</h1>
+              </header>
+              </div>
+          
+  
+  <div class="container">
+    <div class="top-left">
+     
+     
+    </div>
+      
+    <div class="top-right">
+         <!-- SIDEBAR PROFILE WITH PICTURE -->   
+                <div class="center"><img src="img/headshot.png" alt="headshot" width="200" height="200" class="headshot"></div>
+                <h2 class="center"> Jacob Jacknin </h2>
+                   <p class="justify">
+                       Hello, My name is Jacob Jacknin and I am a growth strategist and internet entrepeneur who is currently learning jqery. 
+                   </p> 
+             <!--end PROFILE-->
+      </div>
+      <div class="main">
+    Entrepreneur and growth strategist with a demonstrated history of persistence and initiative. Jacob has a track record of knowing how to invest in order to maximize revenue. Jacob has been involved in numerous industries including private equity, along with entertainment and the technology industry. Skilled in Growth Strategy, Marketing, Future Markets, Start-ups, and Leadership, Jacob is a strong business development professional who currently attends the University of Miami and is on The Deans List for academic excellence. 
+   
+   <!--Jquery Accordion Example-->
+
+    <div class="accordion">
+
+    <h2><a href="">About Me. </a></h2>
+    <p>Jacob has been involved in numerous markets and has had a top 100 app on a $50 marketing budget. Skilled in Growth Strategy, Marketing, Future Markets, Start-ups, and Leadership, Jacob is a strong business development professional who currently attends the University of Miami and is on The Deans List for academic excellence. </p>
+
+    <h2><a href="">5 Year Plan</a></h2>
+    <p>My 5 year plan includes graduating college and focusing on my startups along with growth strategy for other brands. </p>
+
+    <h2><a href="">Goal</a></h2>
+    <p> My goal in life is to focus on innovation to shape the world for the better. I truly believe we are on this earth to impact the world in a positive way and that is something I have lived by throughout my life. It applies to everything I do. </p>
+    </div>
+     
+      
+        </div>
+      
+      
+      
+  </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          var allPanels = $('.accordion > p').hide();
+
+          $('.accordion > h2 > a').click(function() {
+            allPanels.slideUp();
+            $(this).parent().next().slideDown();
+            return false;
+          });
+
+            });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+
+body {
+    font-family: 16px 'Montserrat', sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+
+}
+h1{
+   font-family: 46px 'Montserrat', sans-serif; 
+}
+
+header {
+  padding: 20px;
+  background-color: rgb(244, 115, 33);
+}
+
+/* GRID LAYOUT */
+
+.container{
+    clear: both;
+    display: grid;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: greenyellow;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "topleft topleft topright"
+    "main main main";
+}
+
+.top-left{
+    grid-area: topleft;
+    background-image: url("../img/headshot.png");
+    background-size: cover;
+    background-position: center center;
+     padding-top: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
+        
+}
+
+.top-right{
+    grid-area: topright;
+    background-color: blue;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-size: cover;
+}
+
+/* end */
+
+.accordion {
+  margin: 50px;
+}
+.accordion h2,
+.accordion p {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.accordion h2:last-of-type,
+.accordion p:last-of-type {
+  border-bottom: 1px solid black;
+}
+.accordion h2 a,
+.accordion p a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+.accordion h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.accordion p {
+  border-top: 0;
+  font-size: 12px;
+  background: #efefef;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.accordion p:last-of-type {
+  border-top: 1px solid orange;
+  position: relative;
+  top: -1px;
+}
+
+a {
+  text-decoration: none;
+}
