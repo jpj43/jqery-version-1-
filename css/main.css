@@ -35,7 +35,7 @@ header {
 
 .top-left{
     grid-area: topleft;
-    background-image: url("../img/headshot.png");
+    background-image: url("../img/cereal.png");
     background-size: cover;
     background-position: center center;
      padding-top: 130px;
